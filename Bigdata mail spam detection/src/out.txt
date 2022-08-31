@@ -1,0 +1,41 @@
++--------------------+-----+
+|                text|Class|
++--------------------+-----+
+|attached is the l...| spam|
+|fyi , kim .
+- - -...| spam|
+|it did but tetco ...|  ham|
+|the methanol plan...|  ham|
+|i tried calling y...| spam|
+|fyi , kim .
+- - -...| spam|
+|hi ,
+i am forward...| spam|
+|enron replaces fa...|  ham|
+|attached is the l...| spam|
+|start date : 2 / ...| spam|
+|start date : 2 / ...| spam|
+|start date : 12 /...|  ham|
+|fyi , kim .
+- - -...| spam|
+|this is a complet...|  ham|
+|enron tiger team ...|  ham|
+|business highligh...|  ham|
+|attached is the w...|  ham|
+|attached is the l...| spam|
+|attached is the l...| spam|
+|start date : 2 / ...| spam|
++--------------------+-----+
+only showing top 20 rows
+
+Traceback (most recent call last):
+  File "/home/pes1ug19cs334/bd-ml-spark/src/./model_1/train.py", line 83, in <module>
+    ssc.awaitTermination()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/streaming/context.py", line 199, in awaitTermination
+  File "/opt/spark/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1303, in __call__
+  File "/opt/spark/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1033, in send_command
+  File "/opt/spark/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1200, in send_command
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/context.py", line 285, in signal_handler
+KeyboardInterrupt
